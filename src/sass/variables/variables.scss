@@ -1,0 +1,25 @@
+$container-max-widths: (
+	 xl: 1280px
+	);
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../../src/fonts/HelveticaNeueCyr-Medium.eot');
+	src: local('HelveticaNeueCyr-Medium'),
+		url('../../src/fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../src/fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+		url('../../src/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../../src/fonts/HelveticaNeueCyr-Light.eot');
+	src: local('HelveticaNeueCyr-Light'),
+		url('../../src/fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../src/fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('../../src/fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

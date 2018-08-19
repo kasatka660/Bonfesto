@@ -1,0 +1,74 @@
+
+@import 'variables/variables.scss';
+@import 'variables/mixins.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'layouts/layouts.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+
+body {
+  background: gray;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+  color: #1d1813;
+
+    .container {
+      background: white;
+
+        .row {
+          max-width: 960px;
+          margin: 0 auto;
+
+            .col-lg-4 {
+              padding-left: 10px;
+              padding-right: 10px;
+              margin-bottom: 20px;
+
+                .card {
+                  max-width: 300px;
+                  border: none;
+
+                    .card-body {
+                        font-size: 15px;
+                        font-weight: 300;
+                      }
+                      .card-text {    
+                        line-height: 18px;
+                      }
+                      .card-product {
+                        line-height: 24px;
+                      }
+                      .card-title {
+                          a { 
+                            font-size: 30px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            letter-spacing: 0.75px;
+                            text-transform: uppercase;
+                            border-bottom: 1px dotted;
+                            color: #3c2f20;
+                            font-family: 'Exo 2', sans-serif;
+                              &:hover {
+                                @include title-hover;
+                              }
+                          }
+                      }
+                      .card-subtitle {
+                          a {
+                            font-size: 20px;
+                            font-weight: 500;
+                            text-transform: lowercase;
+                            border-bottom: 1px dotted;
+                            color: #3c2f20;
+                            font-family: 'Exo 2', sans-serif;
+                              &:hover {
+                                @include title-hover;
+                              }
+                          }
+                    }
+                }
+            }
+        }  
+    }
+}
